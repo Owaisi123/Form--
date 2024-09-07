@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="box" id="resume-form">
+            <div class="head">
+                <h1>Resume Builder</h1>
+            </div>
+            <h3 class="head3">Enter Your Data:</h3>
+            <div class="name">
+                <input type="text" placeholder="What's Your Name?" required>
+                <input type="email" placeholder="Enter Your Email?" required>
+                <input type="password" placeholder="Enter Password?" required>
+                <input type="text" placeholder="City Name?" required>
+            </div>
+
+            <!-- Education -->
+            <div class="head">
+                <h1>Education</h1>
+            </div>
+            <h3 class="head3">Enter Your Data:</h3>
+            <div class="name">
+                <input type="text" placeholder="Name of your last attended school" required>
+                <input type="text" placeholder="Qualification?" required>
+                <input type="text" placeholder="Degree?" required>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="head">
+                <h1>Work Experience</h1>
+            </div>
+            <h3 class="head3">Enter Your Data:</h3>
+            <div class="name">
+                <input type="text" placeholder="Enter Your Job Title" required>
+                <input type="text" placeholder="Skills" required>
+            </div>
+
+            <!-- Submit button -->
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <!--  -->
+        <div id="cv-output" style="display: none;">
+            <h2>Your CV</h2>
+            <div id="cv-content"></div>
+    </div>
+
+    <script src="scripts.ts"></script>
+</body>
+
+</html>

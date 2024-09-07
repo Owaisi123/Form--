@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250vh;
+}
+
+.box {
+    height: 250vh;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.295);
+    border-radius: 8px;
+    box-shadow: 3px 8px 30px black;
+}
+
+.head {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.head h1 {
+    color: rgba(0, 0, 0, 0.747);
+    text-decoration: underline;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.head h1:hover {
+    text-decoration: underline rgba(95, 158, 160, 0.329);
+    cursor: pointer;
+    color: cadetblue;
+    text-shadow: 1px 1px 2px blue;
+}
+
+.head3 {
+    line-height: 13rem;
+    text-align: center;
+    font-size: 2em;
+}
+
+.name ::placeholder {
+    text-align: center;
+    color: darkblue;
+    font-size: medium;
+}
+
+.name {
+    text-align: center;
+}
+
+.name input {
+    height: 30px;
+    width: 50%;
+    margin: 30px;
+}
+
+.btn {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.btn button {
+    height: 40px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 7px 11px black;
+}
+
+/*  */
+@media (min-width: 1200px) {
+    .box {
+        width: 50%; /* Adjust width for large screens */
+    }
+
+    .head h1 {
+        font-size: 5em; /* Larger font size */
+    }
+
+    .head3 {
+        font-size: 2.5em; /* Larger font size */
+    }
+
+    .name input {
+        width: 40%; /* Slightly smaller input width */
+    }
+
+    .btn button {
+        width: 15%; /* Smaller button width */
+    }
+}
+
+/* Media query for tablets and medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .box {
+        width: 60%; /* Adjust width for medium screens */
+    }
+
+    .head h1 {
+        font-size: 3em; /* Adjust font size */
+    }
+
+    .head3 {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    .name input {
+        width: 60%; /* Adjust input width */
+    }
+
+    .btn button {
+        width: 25%; /* Adjust button width */
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust height for small screens */
+    }
+
+    .box {
+        width: 90%; /* Full width for small screens */
+        height: auto; /* Adjust height */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .head h1 {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    .head3 {
+        font-size: 1.5em; /* Smaller font size */
+        line-height: 1.5rem; /* Adjust line height */
+    }
+
+    .name input {
+        width: 80%; /* Adjust input width */
+        margin: 20px 0; /* Adjust margin */
+    }
+
+    .btn {
+        margin-top: 50px; /* Adjust margin */
+    }
+
+    .btn button {
+        width: 70%; /* Adjust button width */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 1.5em; /* Smaller font size for very small screens */
+    }
+
+    .head3 {
+        font-size: 1em; /* Smaller font size */
+        line-height: 1.2rem; /* Adjust line height */
+    }
+
+    .name input {
+        width: 90%; /* Full width for input on very small screens */
+    }
+
+    .btn button {
+        width: 90%; /* Full width for button on very small screens */
+    }
+}
+
+/* Media query for ultra-small screens */
+@media (max-width: 360px) {
+    .head h1 {
+        font-size: 1.2em; /* Further reduced font size */
+    }
+
+    .head3 {
+        font-size: 0.9em; /* Further reduced font size */
+        line-height: 1.1rem; /* Adjust line height */
+    }
+
+    .name input {
+        width: 95%; /* Almost full width for ultra-small screens */
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .btn button {
+        width: 95%; /* Almost full width for ultra-small screens */
+        font-size: 0.9em; /* Smaller font size */
+    }
+}
+
+/* Media query for tiny screens */
+@media (max-width: 320px) {
+    .head h1 {
+        font-size: 1em; /* Very small font size */
+    }
+
+    .head3 {
+        font-size: 0.8em; /* Very small font size */
+        line-height: 1rem; /* Adjust line height */
+    }
+
+    .name input {
+        width: 100%; /* Full width for tiny screens */
+        font-size: 0.8em; /* Smaller font size */
+    }
+
+    .btn button {
+        width: 100%; /* Full width for tiny screens */
+        font-size: 0.8em; /* Smaller font size */
+    }
+}
+
+/* Media query for extremely tiny screens */
+@media (max-width: 280px) {
+    .head h1 {
+        font-size: 0.8em; /* Extremely small font size */
+    }
+
+    .head3 {
+        font-size: 0.7em; /* Extremely small font size */
+        line-height: 1rem; /* Adjust line height */
+    }
+
+    .name input {
+        width: 100%; /* Full width for extremely tiny screens */
+        font-size: 0.7em; /* Extremely small font size */
+    }
+
+    .btn button {
+        width: 100%; /* Full width for extremely tiny screens */
+        font-size: 0.7em; /* Extremely small font size */
+    }
+}
